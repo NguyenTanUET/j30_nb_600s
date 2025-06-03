@@ -22,7 +22,8 @@ import sys
 import csv
 import time
 from pathlib import Path
-
+from google.cloud import storage
+import os
 
 def solve_rcpsp(data_file):
     """
@@ -192,8 +193,6 @@ def main():
                 csvfile.flush()
 
     print(f"\nAll done! Results written to {output_file}")
-    from google.cloud import storage
-    import os
 
     # Tên bucket mà bạn đã tạo
     bucket_name = "rcpsp-results-bucket"
