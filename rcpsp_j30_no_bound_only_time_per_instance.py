@@ -195,7 +195,7 @@ def main():
     print(f"\nAll done! Results written to {output_file}")
 
     # Tên bucket mà bạn đã tạo
-    bucket_name = "rcpsp-results-bucket"
+    bucket_name = "rcpsp-bounds-search-results-bucket"
     client = storage.Client()
     bucket = client.bucket(bucket_name)
 
